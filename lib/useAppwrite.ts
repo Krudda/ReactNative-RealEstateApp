@@ -1,5 +1,5 @@
-import { Alert } from "react-native";
-import { useEffect, useState, useCallback } from "react";
+import { Alert } from 'react-native';
+import { useEffect, useState, useCallback } from 'react';
 
 interface UseAppwriteOptions<T, P extends Record<string, string | number>> {
   fn: (params: P) => Promise<T>;
@@ -32,10 +32,9 @@ export const useAppwrite = <T, P extends Record<string, string | number>>({
         const result = await fn(fetchParams);
         setData(result);
       } catch (err: unknown) {
-        const errorMessage =
-          err instanceof Error ? err.message : "An unknown error occurred";
+        const errorMessage = err instanceof Error ? err.message : 'An unknown error occurred';
         setError(errorMessage);
-        Alert.alert("Error", errorMessage);
+        Alert.alert('Error', errorMessage);
       } finally {
         setLoading(false);
       }
