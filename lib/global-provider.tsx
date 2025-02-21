@@ -13,7 +13,7 @@ interface GlobalContextType {
   user: User | null;
   isLoggedIn: boolean;
   loading: boolean;
-  refetch: (newParams: Record<string, string | number>) => Promise<void>;
+  refetch: (newParams?: Record<string, string | number>) => Promise<void>;
 }
 
 interface GlobalProviderProps {
