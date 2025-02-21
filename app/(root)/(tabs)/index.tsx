@@ -1,15 +1,17 @@
-import {Image, Text, TouchableOpacity, View} from 'react-native';
+import {Image, ScrollView, Text, TouchableOpacity, View} from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useGlobalContext } from '@/lib/global-provider';
 import icons from '@/constants/icons';
 import Search from '@/components/Search';
+import {FeaturedCard, Card} from "@/components/Cards";
 
 export default function Index() {
   const { user } = useGlobalContext();
 
   return (
-    <SafeAreaView className="bg-white h-full">
-      <View className="px-5">
+    <SafeAreaView className="bg-white h-fit">
+      <ScrollView showsHorizontalScrollIndicator={false}>
+        <View className="px-5">
         <View className="flex flex-row items-center justify-between mt-5">
           <View className="flex flex-row items-center">
             <Image source={{ uri: user?.avatar }} className="size-12 rounded-full" />
@@ -33,9 +35,31 @@ export default function Index() {
                 </Text>
               </TouchableOpacity>
             </View>
+
+            <View className="flex flex-row gap-5 mt-5">
+              <FeaturedCard />
+              <FeaturedCard />
+            </View>
+          </View>
+
+          <View className="flex flex-row items-center justify-between">
+            <Text className="font-xl font-rubik-bold text-black-300">
+              Recommended
+            </Text>
+            <TouchableOpacity>
+              <Text className='text-base font-rubik-bold text-primary-300'>
+                View All
+              </Text>
+            </TouchableOpacity>
+          </View>
+
+          <View className="flex flex-row gap-5 mt-5">
+            <Card />
+            <Card />
           </View>
         </View>
       </View>
+      </ScrollView>
     </SafeAreaView>
   );
 }
