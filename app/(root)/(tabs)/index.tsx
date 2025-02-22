@@ -1,4 +1,4 @@
-import {FlatList, Image, ScrollView, Text, TouchableOpacity, View} from 'react-native';
+import { FlatList, Image, ScrollView, Text, TouchableOpacity, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useGlobalContext } from '@/lib/global-provider';
 import icons from '@/constants/icons';
@@ -13,8 +13,8 @@ export default function Index() {
     <SafeAreaView className="bg-white h-fit">
       <FlatList
         data={[1, 2, 3, 4]}
-        renderItem={({ item }) => (<Card />)}
-        keyExtractor={item => item.toString()}
+        renderItem={({ item }) => <Card />}
+        keyExtractor={(item) => item.toString()}
         numColumns={2}
         contentContainerClassName="pb-28"
         columnWrapperClassName="flex gap-5 px-5"
@@ -48,10 +48,8 @@ export default function Index() {
                   bounces={false}
                   showsHorizontalScrollIndicator={false}
                   contentContainerClassName="flex gap-5 mt-5"
-                  renderItem={(item) => (
-                    <FeaturedCard />
-                  )}
-                  />
+                  renderItem={(item) => <FeaturedCard />}
+                />
               </View>
 
               <View className="flex flex-row items-center justify-between">
