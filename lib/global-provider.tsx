@@ -10,7 +10,7 @@ interface User {
 }
 
 interface GlobalContextType {
-  user: User | null;
+  user: User | null | undefined;
   isLoggedIn: boolean;
   loading: boolean;
   refetch: (newParams?: Record<string, string | number>) => Promise<void>;
