@@ -47,8 +47,6 @@ export default function Index() {
     });
   }, [params.filter, params.query]);
 
-  console.log('params', params);
-
   return (
     <SafeAreaView className="bg-white h-fit">
       <FlatList
