@@ -23,7 +23,9 @@ export const databases = new Databases(client);
 
 export async function login() {
   try {
-    const redirectUri = Linking.createURL('/');
+    // const redirectUri = Linking.createURL('/');
+    const redirectUri = 'exp://192.168.1.24:8081/--/'; // temporary for testing purposes
+    console.log('Redirect URI: ', redirectUri);
 
     const response = await account.createOAuth2Token(OAuthProvider.Google, redirectUri);
 
