@@ -19,23 +19,23 @@ A full-stack Real Estate application with React Native, featuring Google authent
 
 👉 **Authentication with Google**: Secure and seamless user sign-ins using Google’s authentication service.
 
-<img src="assets/images/Screenshot1.png" width="200"/>
+<img src="assets/images/Screenshot1.png" width="300"/>
 
 👉 **Home Page**: Displays the latest and recommended properties with powerful search and filter functionality.
 
-<img src="assets/images/Screenshot2.png" width="200"/>
+<img src="assets/images/Screenshot2.png" width="300"/>
 
 👉 **Explore Page**: Allows users to browse all types of properties with a clean and intuitive interface.
 
-<img src="assets/images/Screenshot3.png" width="200"/>
+<img src="assets/images/Screenshot3.png" width="300"/>
 
 👉 **Property Details Page**: Provides comprehensive information about individual properties, including images and key details.
 
-<img src="assets/images/Screenshot4.png" width="200"/>
-<img src="assets/images/Screenshot5.png" width="200"/>
+<img src="assets/images/Screenshot4.png" width="300"/>
+<img src="assets/images/Screenshot5.png" width="300"/>
 
 👉 **Profile Page**: Customizable user settings and profile management
 
-<img src="assets/images/Screenshot6.png" width="200"/>
+<img src="assets/images/Screenshot6.png" width="300"/>
 
 👉 **Centralized Data Fetching**: Custom-built solution inspired by TanStack’s useQuery for efficient API calls.
